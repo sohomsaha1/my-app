@@ -1,6 +1,7 @@
 import {React, useState} from "react";
 import { Text,View,StyleSheet,TextInput, TouchableOpacity} from "react-native";
 import Login from "./Login";
+import {  UsernameInput } from "./components/UsernameInput";
 
 const Home = ({ navigation }) => {
 
@@ -16,12 +17,7 @@ const Home = ({ navigation }) => {
         <TouchableOpacity  onPress={() => navigation.navigate("Login")}>
         <Text style={styles.text1}>Home</Text>
         </TouchableOpacity>
-            <View>
-                
-            </View>
-        <TextInput onChange={() => }>
-            
-        </TextInput>
+              <UsernameInput/>  
     </View>
   )
 };
