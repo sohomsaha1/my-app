@@ -1,12 +1,13 @@
 import React from 'react'
 import {TextInput as Input}  from 'react-native-paper'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 
-const UsernameInput = ({...props}) => {
+const PasswordInput = ({...props}) => {
   return (
     <View style={styles.container}>
         <Input {...props}
-        placeholder='Username'
+        style={styles.input}
+        placeholder='Password'
         underlineColor="transparent"
         mode="outlined"
         activeOutlineColor="blue"
@@ -20,10 +21,16 @@ const styles = StyleSheet.create({
     container: {
         width: "80%",
         height: 60,
-        alignItems: "center",
+        alignItems: "center"
 
+
+    },
+    input: {
+      width: "90%",
+      height: 50,
+      alignItems: "center"
 
     }
 })
 
-export default UsernameInput
+export default PasswordInput;
